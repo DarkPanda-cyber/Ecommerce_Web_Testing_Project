@@ -1,0 +1,14 @@
+## Test Cases - E-commerce Web Application
+
+| TC ID | Feature | Description | Steps | Expected Result | Actual Result | Status |
+|-------|---------|-------------|-------|-----------------|---------------|--------|
+| TC_REG_01 | Registration | Verify user can register with valid data | 1. Navigate to registration page <br> 2. Enter valid user details <br> 3. Click Continue | User account created and redirected to My Account page | New user account created and redirected to My Account page | ✅ Pass |
+| TC_LOG_02 | Login | Verify user can reset password using forgot password | 1. Navigate to login page <br> 2. Enter valid email <br> 3. Click continue | Reset link should be sent to the registered email address | Success message displayed but reset link was not provided | ❌ Fail |
+| TC_SEARCH_01 | Search | Verify Product Search functionality | 1. Navigate to search page <br> 2. Enter valid product keyword <br> 3. Click search | Products meeting the search criteria should be displayed | Products meeting the search criteria are displayed | ✅ Pass |
+| TC_CAR_03 | Cart | Verify error message for 'Out of Stock' items | 1. Add out-of-stock product to cart <br> 2. Navigate to cart <br> 3. Click checkout | "Not in stock" error message should be displayed | "Not in stock" error message is displayed | ✅ Pass |
+| TC_CHE_02 | Checkout | Verify user can confirm an order | 1. Complete checkout steps <br> 2. Select payment/shipping <br> 3. Click confirm order | User redirected to success confirmation message page | User confirmed order and redirected to success page | ✅ Pass |
+| TC_RET_01 | Returns | Verify user can return products | 1. Navigate to orders <br> 2. Click return on a product <br> 3. Fill details and submit | Order should be returned successfully | Faulty submit button; order is not returned | ❌ Fail |
+| TC_ERR_03 | Validation | Verify negative quantity input in cart | 1. Go to product page <br> 2. Enter negative number in Quantity <br> 3. Add to cart | System should not allow negative quantities | Negative value accepted; success message shown but item not added | ❌ Fail |
+| TC_ERR_09 | Validation | Verify user cannot checkout with empty cart | 1. Go to empty shopping cart <br> 2. Click checkout button | System should prevent navigation to checkout | User cannot checkout from an empty cart | ✅ Pass |
+| TC_UI_06 | UI/UX | Verify web app compatibility across devices | 1. Open app <br> 2. Use DevTools to toggle Mobile/Tablet/Desktop views | App should work seamlessly on all screen dimensions | Web Application is working seamlessly on different devices | ✅ Pass |
+| TC_UI_07 | UI/UX | Verify currency change via header dropdown | 1. Click currency dropdown <br> 2. Select Euro or Pound Sterling | Prices should update to the selected currency symbol | Prices display the selected currency | ✅ Pass |
